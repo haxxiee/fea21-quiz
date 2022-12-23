@@ -8,6 +8,8 @@ import React, { useState } from "react";
 // Identifiera de sakerna som saknas och fixa komponenten!
 
 // Förstår inte riktigt vad man ska ändra och inte..?
+// Har aldrig hanterat onChange med liknande
+// Gjorde en egen på 5 sek nedan. v
 function Six() {
   // Ändra inte statet nedan
   const [input, setInput] = useState({});
@@ -27,5 +29,33 @@ function Six() {
     </div>
   );
 }
+
+// function Six() {
+//   // Ändra inte statet nedan
+//   const [firstName, setFirstName] = useState("");
+//   const [lastName, setLastName] = useState("");
+
+//   return (
+//     <div>
+//       <p data-testid="six-text">
+//         Hi, my name is: {firstName} {lastName}
+//       </p>
+//       <input
+//         type="text"
+//         name="firstName"
+//         data-testid="six-firstName"
+//         onChange={(e) => setFirstName(e.target.value)}
+//         value={firstName}
+//       />
+//       <input
+//         type="text"
+//         name="lastName"
+//         data-testid="six-lastName"
+//         onChange={(e) => setLastName(e.target.value)}
+//         value={lastName}
+//       />
+//     </div>
+//   );
+// }
 
 export default Six;
